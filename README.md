@@ -1,2 +1,0 @@
-# vanelope.github.io
-
