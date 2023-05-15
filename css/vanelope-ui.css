@@ -41,11 +41,11 @@ header {
 }
 footer {
     justify-items: center;
-    position: absolute;
-    bottom: 0;
-    display: grid;
     font-size: smaller;
     width: 100vw;
+    position: fixed;
+    align-items: center;
+    text-align: center;
 }
 footer a {
     color:#020450;
@@ -67,7 +67,7 @@ footer a:hover{
     border-radius: 0.9em;
     box-shadow: 0em 0.3em 1em 2.5px rgb(123 196 255 / 68%);
     color: #020450;
-    height: 60vh;
+    height: 70vh;
     display: flow-root;
     padding-top: 4em;
     text-align: center;
@@ -187,10 +187,23 @@ button {
     padding: 1em;
     margin: 2em;
 }
+.box-update{
+    overflow: auto;
+    height:50%;
+}
+.box-add{
+    display:inline-flex;
+    border-radius: 10px;
+    margin:0.5em;
+    padding: 1em;
 
+    border-style: solid;
+    border-width: 0.2em;
+    border-color:#ff005c;
+}
 
 @media screen and (max-width: 400px) {
-    
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -201,6 +214,15 @@ button {
 }
  
 #btns-container {
+    position: absolute;
+    transform-origin: top;
+    top: 7.3em;
+    right: 3em;
     display: none;
 }
+.box-update {
+    overflow: auto;
+    height: 9em;
+}
+.bmc-wbtn{display: none;}
 }

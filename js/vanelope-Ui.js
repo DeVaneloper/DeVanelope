@@ -38,12 +38,7 @@ function btnclic(){
   audio.play();
   }
 
-// No right clic
-$(document).ready(function() {
-  $("body").on("contextmenu", function(e) {
-      return false;
-    });
-});
+
 // remplazar contenido js
 // let elementoModificado = document.querySelector("html")
 //        elementoModificado.innerHTML = "Lecciones"
